@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.log
+*.pcap
+*.pcapng
+.DS_Store
+data/
+models/

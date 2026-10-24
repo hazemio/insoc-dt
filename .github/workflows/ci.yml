@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main, develop]
+    types: [opened, edited, synchronize, reopened]
+  push:
+    branches: [main, develop]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements-dev.txt
+      - run: ruff check .
+
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements-dev.txt
+      - run: pytest -q
+
+  pr-policy:
+    name: pr-policy
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR title and branch names
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+          HEAD: ${{ github.head_ref }}
+          BASE: ${{ github.base_ref }}
+        run: |
+          if ! echo "$TITLE" | grep -Eq '^(feat|fix|docs|research|test|refactor|perf|ci|chore)(\([a-z0-9-]+\))?: .+'; then
+            echo "::error::PR title must look like 'type(scope): summary'. Got: $TITLE"
+            exit 1
+          fi
+          if [ "$BASE" = "main" ]; then
+            if ! echo "$HEAD" | grep -Eq '^(develop|hotfix/.+)$'; then
+              echo "::error::PRs into main must come from develop or hotfix/*. Got: $HEAD"
+              exit 1
+            fi
+          elif [ "$BASE" = "develop" ]; then
+            if ! echo "$HEAD" | grep -Eq '^(feature|fix|docs|research|chore|refactor|test|ci|perf)/.+$'; then
+              echo "::error::Branch name must start with feature/ fix/ docs/ research/ chore/ refactor/ test/ ci/ perf/. Got: $HEAD"
+              exit 1
+            fi
+          fi
+          echo "OK: $HEAD -> $BASE"

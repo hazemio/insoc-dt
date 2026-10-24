@@ -1,0 +1,14 @@
+# Replace @hazemio with the real owner of each area once teammates join.
+# Owners of changed paths must approve the PR.
+*                       @hazemio
+/.github/               @hazemio
+/lab/                   @hazemio
+/src/insoc/risk/        @hazemio
+/src/insoc/ml/          @hazemio
+/src/insoc/detection/   @hazemio
+/src/insoc/response/    @hazemio
+/src/insoc/twin/        @hazemio
+/src/insoc/dashboard/   @hazemio
+/research/              @hazemio
+/docs/                  @hazemio
+/weeks/                 @hazemio
