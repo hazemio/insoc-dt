@@ -1,1 +1,343 @@
-% Add BibTeX entries here
+% ============================================================================
+% INSOC-DT: Intelligent Network Security SOC with Network Digital Twin
+% references.bib
+%
+% Citation key convention: firstauthorYEARkeyword
+% The `keywords` field maps each entry to a section of the project document.
+%
+% IMPORTANT: Entries were compiled from memory (no live database lookup).
+% Before submission, verify each entry (year, pages, DOI) on Google Scholar,
+% IEEE Xplore, ACM DL, or the publisher page. Entries marked
+% `note = {VERIFY}` are the ones most likely to need correction.
+% ============================================================================
+
+
+% ----------------------------------------------------------------------------
+% 1. INTRUSION DETECTION AND MACHINE LEARNING  (Sections 8, 9, 10)
+% ----------------------------------------------------------------------------
+
+@inproceedings{sommer2010outside,
+  author    = {Sommer, Robin and Paxson, Vern},
+  title     = {Outside the Closed World: On Using Machine Learning for Network Intrusion Detection},
+  booktitle = {Proc. IEEE Symposium on Security and Privacy (S\&P)},
+  year      = {2010},
+  pages     = {305--316},
+  doi       = {10.1109/SP.2010.25},
+  keywords  = {IDS, ML, justification for hybrid detection},
+  note      = {Core justification for using ML as a second layer beside rules}
+}
+
+@article{buczak2016survey,
+  author    = {Buczak, Anna L. and Guven, Erhan},
+  title     = {A Survey of Data Mining and Machine Learning Methods for Cyber Security Intrusion Detection},
+  journal   = {IEEE Communications Surveys \& Tutorials},
+  year      = {2016},
+  volume    = {18},
+  number    = {2},
+  pages     = {1153--1176},
+  doi       = {10.1109/COMST.2015.2494502},
+  keywords  = {IDS, ML, survey}
+}
+
+@article{ahmad2021network,
+  author    = {Ahmad, Zeeshan and Shahid Khan, Adnan and Wai Shiang, Cheah and Abdullah, Johari and Ahmad, Farhan},
+  title     = {Network Intrusion Detection System: A Systematic Study of Machine Learning and Deep Learning Approaches},
+  journal   = {Transactions on Emerging Telecommunications Technologies},
+  year      = {2021},
+  volume    = {32},
+  number    = {1},
+  pages     = {e4150},
+  doi       = {10.1002/ett.4150},
+  keywords  = {IDS, ML, survey},
+  note      = {VERIFY}
+}
+
+@inproceedings{mirsky2018kitsune,
+  author    = {Mirsky, Yisroel and Doitshman, Tomer and Elovici, Yuval and Shabtai, Asaf},
+  title     = {Kitsune: An Ensemble of Autoencoders for Online Network Intrusion Detection},
+  booktitle = {Proc. Network and Distributed System Security Symposium (NDSS)},
+  year      = {2018},
+  doi       = {10.14722/ndss.2018.23204},
+  keywords  = {anomaly detection, online IDS, autoencoder}
+}
+
+@article{breiman2001random,
+  author    = {Breiman, Leo},
+  title     = {Random Forests},
+  journal   = {Machine Learning},
+  year      = {2001},
+  volume    = {45},
+  number    = {1},
+  pages     = {5--32},
+  doi       = {10.1023/A:1010933404324},
+  keywords  = {ML model, Random Forest}
+}
+
+@inproceedings{chen2016xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A Scalable Tree Boosting System},
+  booktitle = {Proc. 22nd ACM SIGKDD Int. Conf. Knowledge Discovery and Data Mining (KDD)},
+  year      = {2016},
+  pages     = {785--794},
+  doi       = {10.1145/2939672.2939785},
+  keywords  = {ML model, XGBoost}
+}
+
+@article{pedregosa2011scikit,
+  author    = {Pedregosa, Fabian and Varoquaux, Ga{\"e}l and Gramfort, Alexandre and Michel, Vincent and Thirion, Bertrand and Grisel, Olivier and Blondel, Mathieu and Prettenhofer, Peter and Weiss, Ron and Dubourg, Vincent and others},
+  title     = {Scikit-learn: Machine Learning in {Python}},
+  journal   = {Journal of Machine Learning Research},
+  year      = {2011},
+  volume    = {12},
+  pages     = {2825--2830},
+  keywords  = {ML tooling}
+}
+
+
+% ----------------------------------------------------------------------------
+% 2. DATASETS  (Section 10)
+% ----------------------------------------------------------------------------
+
+@inproceedings{sharafaldin2018toward,
+  author    = {Sharafaldin, Iman and Habibi Lashkari, Arash and Ghorbani, Ali A.},
+  title     = {Toward Generating a New Intrusion Detection Dataset and Intrusion Traffic Characterization},
+  booktitle = {Proc. 4th Int. Conf. Information Systems Security and Privacy (ICISSP)},
+  year      = {2018},
+  pages     = {108--116},
+  doi       = {10.5220/0006639801080116},
+  keywords  = {dataset, CICIDS2017}
+}
+
+@inproceedings{moustafa2015unsw,
+  author    = {Moustafa, Nour and Slay, Jill},
+  title     = {{UNSW-NB15}: A Comprehensive Data Set for Network Intrusion Detection Systems},
+  booktitle = {Proc. Military Communications and Information Systems Conf. (MilCIS)},
+  year      = {2015},
+  pages     = {1--6},
+  doi       = {10.1109/MilCIS.2015.7348942},
+  keywords  = {dataset, UNSW-NB15}
+}
+
+@inproceedings{engelen2021troubleshooting,
+  author    = {Engelen, Gints and Rimmer, Vera and Joosen, Wouter},
+  title     = {Troubleshooting an Intrusion Detection Dataset: the {CICIDS2017} Case Study},
+  booktitle = {Proc. IEEE Security and Privacy Workshops (SPW)},
+  year      = {2021},
+  pages     = {7--12},
+  doi       = {10.1109/SPW53761.2021.00009},
+  keywords  = {dataset, CICIDS2017, data quality, labeling errors},
+  note      = {Read before training: documents flow-construction and labeling problems in CICIDS2017}
+}
+
+@inproceedings{tavallaee2009detailed,
+  author    = {Tavallaee, Mahbod and Bagheri, Ebrahim and Lu, Wei and Ghorbani, Ali A.},
+  title     = {A Detailed Analysis of the {KDD CUP 99} Data Set},
+  booktitle = {Proc. IEEE Symp. Computational Intelligence for Security and Defense Applications (CISDA)},
+  year      = {2009},
+  pages     = {1--6},
+  doi       = {10.1109/CISDA.2009.5356528},
+  keywords  = {dataset, NSL-KDD, dataset critique},
+  note      = {VERIFY}
+}
+
+
+% ----------------------------------------------------------------------------
+% 3. SENSORS: SURICATA / ZEEK / WAZUH  (Section 8)
+% ----------------------------------------------------------------------------
+
+@article{paxson1999bro,
+  author    = {Paxson, Vern},
+  title     = {Bro: A System for Detecting Network Intruders in Real-Time},
+  journal   = {Computer Networks},
+  year      = {1999},
+  volume    = {31},
+  number    = {23--24},
+  pages     = {2435--2463},
+  doi       = {10.1016/S1389-1286(99)00112-7},
+  keywords  = {Zeek, IDS, network monitoring},
+  note      = {Original paper behind Zeek (formerly Bro)}
+}
+
+@misc{suricata_docs,
+  author       = {{Open Information Security Foundation}},
+  title        = {Suricata User Guide},
+  howpublished = {\url{https://docs.suricata.io}},
+  note         = {Technical documentation; add access date when citing},
+  keywords     = {Suricata, signature IDS}
+}
+
+@misc{zeek_docs,
+  author       = {{The Zeek Project}},
+  title        = {Zeek Documentation},
+  howpublished = {\url{https://docs.zeek.org}},
+  note         = {Technical documentation; add access date when citing},
+  keywords     = {Zeek, network metadata}
+}
+
+@misc{wazuh_docs,
+  author       = {{Wazuh, Inc.}},
+  title        = {Wazuh Documentation},
+  howpublished = {\url{https://documentation.wazuh.com}},
+  note         = {Technical documentation; add access date when citing},
+  keywords     = {Wazuh, SIEM, HIDS}
+}
+
+
+% ----------------------------------------------------------------------------
+% 4. CORRELATION, SOC AND INCIDENT RESPONSE  (Sections 11, 12, 13, 14, 15)
+% ----------------------------------------------------------------------------
+
+@article{valeur2004comprehensive,
+  author    = {Valeur, Fredrik and Vigna, Giovanni and Kruegel, Christopher and Kemmerer, Richard A.},
+  title     = {A Comprehensive Approach to Intrusion Detection Alert Correlation},
+  journal   = {IEEE Transactions on Dependable and Secure Computing},
+  year      = {2004},
+  volume    = {1},
+  number    = {3},
+  pages     = {146--169},
+  doi       = {10.1109/TDSC.2004.21},
+  keywords  = {alert correlation}
+}
+
+@article{vielberth2020security,
+  author    = {Vielberth, Manfred and B{\"o}hm, Fabian and Fichtinger, Ines and Pernul, G{\"u}nther},
+  title     = {Security Operations Center: A Systematic Study and Open Challenges},
+  journal   = {IEEE Access},
+  year      = {2020},
+  volume    = {8},
+  pages     = {227756--227779},
+  doi       = {10.1109/ACCESS.2020.3045514},
+  keywords  = {SOC, SIEM, challenges}
+}
+
+@techreport{cichonski2012nist80061,
+  author      = {Cichonski, Paul and Millar, Tom and Grance, Tim and Scarfone, Karen},
+  title       = {Computer Security Incident Handling Guide},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-61 Rev. 2},
+  year        = {2012},
+  doi         = {10.6028/NIST.SP.800-61r2},
+  keywords    = {incident response, lifecycle},
+  note        = {Check whether a newer revision has superseded this before citing}
+}
+
+@techreport{scarfone2007nist80094,
+  author      = {Scarfone, Karen and Mell, Peter},
+  title       = {Guide to Intrusion Detection and Prevention Systems ({IDPS})},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-94},
+  year        = {2007},
+  doi         = {10.6028/NIST.SP.800-94},
+  keywords    = {IDS, IPS, guidelines}
+}
+
+@techreport{kent2006nist80092,
+  author      = {Kent, Karen and Souppaya, Murugiah},
+  title       = {Guide to Computer Security Log Management},
+  institution = {National Institute of Standards and Technology},
+  type        = {NIST Special Publication},
+  number      = {800-92},
+  year        = {2006},
+  doi         = {10.6028/NIST.SP.800-92},
+  keywords    = {log management, SIEM},
+  note        = {VERIFY}
+}
+
+
+% ----------------------------------------------------------------------------
+% 5. DIGITAL TWIN  (Sections 16, 17)
+% ----------------------------------------------------------------------------
+
+@incollection{grieves2017digital,
+  author    = {Grieves, Michael and Vickers, John},
+  title     = {Digital Twin: Mitigating Unpredictable, Undesirable Emergent Behavior in Complex Systems},
+  booktitle = {Transdisciplinary Perspectives on Complex Systems},
+  publisher = {Springer},
+  year      = {2017},
+  pages     = {85--113},
+  doi       = {10.1007/978-3-319-38756-7_4},
+  keywords  = {digital twin, foundations}
+}
+
+@article{fuller2020digital,
+  author    = {Fuller, Aidan and Fan, Zhong and Day, Charles and Barlow, Chris},
+  title     = {Digital Twin: Enabling Technologies, Challenges and Open Research},
+  journal   = {IEEE Access},
+  year      = {2020},
+  volume    = {8},
+  pages     = {108952--108971},
+  doi       = {10.1109/ACCESS.2020.2998358},
+  keywords  = {digital twin, survey}
+}
+
+@article{almasan2022network,
+  author    = {Almasan, Paul and Ferriol-Galm{\'e}s, Miquel and Paillisse, Jordi and Su{\'a}rez-Varela, Jos{\'e} and Perino, Diego and L{\'o}pez, Diego and Pastor Perales, Antonio Agustin and Harvey, Paul and Ciavaglia, Laurent and Wong, Leon and others},
+  title     = {Network Digital Twin: Context, Enabling Technologies, and Opportunities},
+  journal   = {IEEE Communications Magazine},
+  year      = {2022},
+  volume    = {60},
+  number    = {11},
+  pages     = {22--27},
+  doi       = {10.1109/MCOM.001.2200012},
+  keywords  = {network digital twin},
+  note      = {VERIFY author list and pages}
+}
+
+@misc{zhou2023ndt,
+  author       = {Zhou, Cheng and Yang, Hongwei and Duan, Xiaodong and Lopez, Diego and Pastor, Antonio and Wu, Qin and Boucadair, Mohamed and Jacquenet, Christian},
+  title        = {Network Digital Twin: Concepts and Reference Architecture},
+  howpublished = {IRTF Network Management Research Group, Internet-Draft draft-irtf-nmrg-network-digital-twin-arch},
+  year         = {2023},
+  note         = {Work in progress. VERIFY: check datatracker.ietf.org for the current version and whether it was published as an RFC},
+  keywords     = {network digital twin, reference architecture}
+}
+
+@incollection{eckhart2019digital,
+  author    = {Eckhart, Matthias and Ekelhart, Andreas},
+  title     = {Digital Twins for Cyber-Physical Systems Security: State of the Art and Outlook},
+  booktitle = {Security and Quality in Cyber-Physical Systems Engineering},
+  publisher = {Springer},
+  year      = {2019},
+  pages     = {383--412},
+  doi       = {10.1007/978-3-030-25312-7_14},
+  keywords  = {digital twin, security simulation},
+  note      = {VERIFY}
+}
+
+
+% ----------------------------------------------------------------------------
+% 6. WHAT-IF ANALYSIS AND CONFIGURATION VALIDATION  (Section 16)
+% ----------------------------------------------------------------------------
+
+@inproceedings{fogel2015general,
+  author    = {Fogel, Ari and Fung, Stanley and Pedrosa, Luis and Walraed-Sullivan, Meg and Govindan, Ramesh and Mahajan, Ratul and Millstein, Todd},
+  title     = {A General Approach to Network Configuration Analysis},
+  booktitle = {Proc. 12th USENIX Symp. Networked Systems Design and Implementation (NSDI)},
+  year      = {2015},
+  pages     = {469--483},
+  keywords  = {Batfish, configuration analysis, what-if, ACL, routing},
+  note      = {Closest prior work to the what-if / config-validation module}
+}
+
+@misc{batfish_tool,
+  author       = {{Batfish Project}},
+  title        = {Batfish: Network Configuration Analysis Tool},
+  howpublished = {\url{https://www.batfish.org}},
+  note         = {Open source; supports Cisco IOS configs. Add access date when citing},
+  keywords     = {Batfish, tool}
+}
+
+@article{ferriolgalmes2023routenet,
+  author    = {Ferriol-Galm{\'e}s, Miquel and Paillisse, Jordi and Su{\'a}rez-Varela, Jos{\'e} and Rusek, Krzysztof and Xiao, Shihan and Shi, Xiang and Cheng, Xiangle and Barlet-Ros, Pere and Cabellos-Aparicio, Albert},
+  title     = {{RouteNet-Fermi}: Network Modeling With Graph Neural Networks},
+  journal   = {IEEE/ACM Transactions on Networking},
+  year      = {2023},
+  volume    = {31},
+  number    = {6},
+  pages     = {3080--3095},
+  doi       = {10.1109/TNET.2023.3269983},
+  keywords  = {GNN, network modeling, future work},
+  note      = {VERIFY pages}
+}
