@@ -1,0 +1,6 @@
+# Ignore everything in this folder (datasets are large, download locally)
+*
+
+# ...except these tracked files
+!.gitignore
+!README.md
